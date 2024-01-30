@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+    <style>
+        body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d6abe;
+    
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #3615b9;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#options-container label {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#submit-button {
+    background-color: #3a19bf;
+    color: #f4f5f5;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #1b0459;
+}
+
+#score-container {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question-container"></div>
+        <div id="options-container"></div>
+        <button id="submit-button">Submit answer</button>
+        <div id="score-container">Score: <span id="score">0</span></div>
+    </div>
+    <script src="scriptx.js"></script>
+</body>
+</html>
