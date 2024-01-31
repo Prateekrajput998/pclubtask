@@ -7,12 +7,13 @@
     <title>Quiz</title>
     <style>
         body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: cursive;
     margin: 0;
     padding: 0;
     background-image: url(bg3.jpg);
     
 }
+
 
 #quiz-container {
     max-width: 600px;
@@ -25,7 +26,7 @@
 
 h1 {
     text-align: center;
-    color: #3615b9;
+    color: #43096c;
 }
 
 #question-container {
@@ -43,7 +44,7 @@ h1 {
 }
 
 #submit-button {
-    background-color: #3a19bf;
+    background-color: #510c6f;
     color: #f4f5f5;
     padding: 10px;
     border: none;
@@ -52,7 +53,7 @@ h1 {
 }
 
 #submit-button:hover {
-    background-color: #1b0459;
+    background-color: #2f024f;
 }
 
 #score-container {
@@ -60,11 +61,27 @@ h1 {
     text-align: center;
     font-weight: bold;
 }
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+
 
     </style>
 </head>
 
 <body>
+
+    
     <div id="quiz-container">
         <h1>Quiz</h1>
         <div id="question-container"></div>
@@ -72,6 +89,10 @@ h1 {
         <button id="submit-button">Submit answer</button>
         <div id="score-container">Score: <span id="score">0</span></div>
     </div>
+    <video id="background-video" autoplay loop muted poster="bg3.jpg">
+        <source src="bgvideo2.mp4" type="video/mp4">
+      </video>
+      
     <script src="scriptx.js"></script>
 </body>
 </html>
